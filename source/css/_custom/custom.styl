@@ -1,4 +1,21 @@
 // Custom styles.
+//更改链接文本样式
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+  &:hover {
+    color: #0477ab;
+    text-decoration: underline;
+  }
+}
+.post-body li a {
+  color: #FF2152;
+  border-bottom: none;
+  &:hover {
+    color: #0477ab;
+    text-decoration: underline;
+  }
+}
 form input.st-default-search-input {
     font-size: 12px;
     padding: 4px 9px 4px 27px;
@@ -17,15 +34,7 @@ form input.st-default-search-input {
     outline: none;
     background: #fcfcfc url(/img/search.png) no-repeat 7px 7px;
 }
-//更改链接文本样式
-.post-body a {
-  color: #0593d3;
-  border-bottom: none;
-  &:hover {
-    color: #0477ab;
-    text-decoration: underline;
-  }
-}
+
 
 /*单条搜索结果*/
 #local-search-result li {
