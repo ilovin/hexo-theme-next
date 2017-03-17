@@ -97,7 +97,7 @@
                 }
               })};
             str += "</ul>";
-            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa  fa-5x" /></div>' }
             if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
             $resultContent.innerHTML = str;
           });
@@ -108,6 +108,13 @@
     // handle and trigger popup window;
     $('.popup-trigger').click(function(e) {
       e.stopPropagation();
+      setTimeout( function(){
+       try{
+        var t = document.getElementById('local-search-input');
+        t.focus();
+        t.select();
+       } catch(e){}
+      }, 200);
       if (isfetched == false) {
         searchFunc(path, 'local-search-input', 'local-search-result');
       } else {
