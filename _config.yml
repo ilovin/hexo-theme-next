@@ -289,7 +289,7 @@ mathjax:
 baidu_analytics: 387ddb038f08ace9a4b30c72ad739cde
 
 # 	 ShortName
-duoshuo_shortname: ilovin
+# duoshuo_shortname: ilovin
 
 # Disqus
 #disqus_shortname:
@@ -306,7 +306,7 @@ duoshuo_shortname: ilovin
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
+livere_uid: MTAyMC8yODA3MC80NjQ0
 
 # Baidu Share
 # Available value:
@@ -413,7 +413,7 @@ busuanzi_count:
 
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: false
+baidu_push: true
 
 # Google Calendar
 # Share your recent schedule to others via calendar page
