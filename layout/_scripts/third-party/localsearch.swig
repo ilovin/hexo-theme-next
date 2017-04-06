@@ -34,6 +34,13 @@
               url: $( "url" , this).text()
             };
           }).get();
+      setTimeout( function(){
+       try{
+        var t = document.getElementById('local-search-input');
+        t.focus();
+        t.select();
+       } catch(e){}
+      }, 10);
           var $input = document.getElementById(search_id);
           var $resultContent = document.getElementById(content_id);
           $input.addEventListener('input', function(){
@@ -119,6 +126,13 @@
         searchFunc(path, 'local-search-input', 'local-search-result');
       } else {
         proceedsearch();
+        setTimeout( function(){
+          try{
+            var t = document.getElementById('local-search-input');
+            t.focus();
+            t.select();
+          } catch(e){}
+        }, 10);
       };
     });
 
